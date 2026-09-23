@@ -1,0 +1,25 @@
+# Prop Betting Model Calculator
+
+A Streamlit app that pulls live DraftKings player prop lines, OCRs prop
+screenshots, runs them through a custom trigger system, and backtests
+whether those triggers actually beat a coin flip.
+
+## Setup
+
+1. Clone this repo and `cd` into it.
+2. Install dependencies:
+```bash
+   pip install -r requirements.txt
+```
+3. Copy the secrets template and add your real API key:
+```bash
+   cp .streamlit/secrets.toml.example .streamlit/secrets.toml
+```
+   Then open `.streamlit/secrets.toml` and paste your key from
+   [the-odds-api.com](https://the-odds-api.com) in place of the placeholder.
+4. Run the app:
+```bash
+   streamlit run prop_calculator.py
+```
+
+`.streamlit/secrets.toml` is gitignored and will never be committed.
